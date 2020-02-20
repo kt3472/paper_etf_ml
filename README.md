@@ -1,3 +1,4 @@
+
 # The Review of Forecasting ETFs With ML Models
 
 **1. Paper Title**
@@ -43,22 +44,25 @@
    * Information Set A(X<sub>A</sub>) : 과거 t기간의 기간 수익률
       
     ![dataset](./image/pic1.png)
+    
    * Information Set B(X<sub>B</sub>) : 과거 t기간의 일평균 거래량
    
-   ![dataset](./image/pic2.png)
+    ![dataset](./image/pic2.png)
+    
    * Information Set C(X<sub>C</sub>) : 월/요일 더미 변수
+   
    * Information Set ABC : { X<sub>A</sub>, X<sub>B</sub>, X<sub>C</sub> }
   
  - Target Variable
    * 각 기간별 수익률을 상승의 경우 "1", 하락의 경우 "0"으로 Labeling
    
-   ![dataset](./image/pic3.png)
+    ![dataset](./image/pic3.png)
    
  - 평가방법
    * Gain Criteria : Information Set을 feature로 측정한 예측정확도와 난수(Random variable)을 Feature로 측정한 예측정확도 값을 비교
     ※ 난수는 0 ~ 1 의 Uniform random distribution을 따르는 값
     
-   ![dataset](./image/pic4.png)
+    ![dataset](./image/pic4.png)
     
 **4. Results & Conclusions**
  - SVM, RF, DNN 알고리즘으로 예측을 실행했을 경우 10일 ~ 60일 기간의 상승/하락 예측의 정확도가 높음. 반면 단기간 예측 정확도는 상대적으로 낮음
