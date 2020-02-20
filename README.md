@@ -13,7 +13,7 @@
  - Deep Neural Networks(DNN)
   
     * 참고자료링크 : https://ko.wikipedia.org/wiki/심층_학습
-    * 파라미터 설정  
+    * 파라미터 설정값  
      + Alpha (L2 regularization term) - {0.0001, 0.001, 0.01, 0.1, 1.0, 10.0, 100.0, 1000.0}
      + Activation Function - {rectified unit linear function, logistic sigmoid function, hyperbolic tan function} 4
      + Solver for weight optimization - stochastic gradient descent
@@ -22,14 +22,14 @@
  - Random Forests(RF)
  
     * 참고자료링크 : https://ko.wikipedia.org/wiki/랜덤_포레스트
-    * 파라미터 설정
+    * 파라미터 설정값
      + Number of decision trees - {100, 200, 300}
      + Function to measure quality of a split - {Gini impurity, information gain}
   
  - Support Vector Machines(SVM)
    
     * 참고자료링크 : https://ko.wikipedia.org/wiki/서포트_벡터_머신
-    * 파라미터 설정
+    * 파라미터 설정값
      + C (penalty parameter of the error term) - {0.0001, 0.001, 0.01, 0.1, 1.0, 10.0, 100.0, 1000.0}
      + Kernel - {linear, radial basis function}
   
@@ -40,10 +40,10 @@
     ![dataset](./image/DataSet.jpg)
     
  - Features
-  1) Information Set A(XA) : 과거 t기간의 기간 수익률
-  2) Information Set B(XB) : 과거 t기간의 일평균 거래량
-  3) Information Set C(XC) : 월/요일 더미 변수
-  4) Information Set ABC : { XA, XB, XC }
+   * Information Set A(X<sub>A</sub>) : 과거 t기간의 기간 수익률
+   * Information Set B(X<sub>B</sub>) : 과거 t기간의 일평균 거래량
+   * Information Set C(X<sub>C</sub>) : 월/요일 더미 변수
+   * Information Set ABC : { X<sub>A</sub>, X<sub>B</sub>, X<sub>C</sub> }
   
  - Target Variable
    * 각 기간별 수익률을 상승의 경우 "1", 하락의 경우 "0"으로 Labeling
@@ -56,8 +56,8 @@
  - SVM, RF, DNN 알고리즘으로 예측을 실행했을 경우 10일 ~ 60일 기간의 상승/하락 예측의 정확도가 높음. 반면 단기간 예측 정확도는 상대적으로 낮음
  - 일평균거래량 feature의 중요도가 높고, ETF별로 각 feature의 중요도는 달라짐
  - Information Set으로 Social Media 데이터를 이용하거나 다양한 자산과 기간(horizon)을 적용해 보는것을 권함
- 
-**5. Results & Conclusions**
+  
+**5. KRX Listed ETF?**
  
  
  
