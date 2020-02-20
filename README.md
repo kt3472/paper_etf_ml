@@ -6,7 +6,7 @@
  - [(PDF file Link)](http://www.smallake.kr/wp-content/uploads/2017/04/SSRN-id2899520.pdf)
 
 **2. Summary**
- - 투자자산군별 ETF의 과거 종가/일평균거래량, 월/요일 변수 데이타 등을 기초로 머신러닝 알고리즘을 이용하여 각 ETF의 상승/하락의 예측가능성을 검증함
+ - 투자자산군별 ETF의 과거 종가/일평균거래량, 월/요일 변수 데이타 등을 기초로 머신러닝 알고리즘을 이용하여 각 ETF의 상승/하락의 예측가능성을 검증
  - Support Vector Machines, Random Forests, Deep Neural Networks 알고리즘 사용
  - 생성한 난수(Random Data)를 입력 변수로 사용한 결과값과 비교하여 알고리즘의 정확도 평가
  
