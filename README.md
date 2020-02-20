@@ -10,28 +10,30 @@
  - 생성한 난수(Random Data)를 입력 변수로 사용한 결과값과 비교하여 알고리즘의 정확도 평가
  
 **3. Methods**
- - 사용 알고리즘
-  1) Deep Neural Networks(DNN)
-    - 참고자료링크 : https://ko.wikipedia.org/wiki/심층_학습
-    - 파라미터 설정
-     ○ Alpha (L2 regularization term) - {0.0001, 0.001, 0.01, 0.1, 1.0, 10.0, 100.0, 1000.0}
-     ○ Activation Function - {rectified unit linear function, logistic sigmoid function, hyperbolic tan function} 4
-     ○ Solver for weight optimization - stochastic gradient descent
-     ○ Hidden layers - {(100, 100), (100, 100, 100)}
+ - Deep Neural Networks(DNN)
   
-  2) Random Forests(RF)
+    * 참고자료링크 : https://ko.wikipedia.org/wiki/심층_학습
+    * 파라미터 설정  
+     + Alpha (L2 regularization term) - {0.0001, 0.001, 0.01, 0.1, 1.0, 10.0, 100.0, 1000.0}
+     + Activation Function - {rectified unit linear function, logistic sigmoid function, hyperbolic tan function} 4
+     + Solver for weight optimization - stochastic gradient descent
+     + Hidden layers - {(100, 100), (100, 100, 100)}
+  
+ - Random Forests(RF)
+ 
     * 참고자료링크 : https://ko.wikipedia.org/wiki/랜덤_포레스트
     * 파라미터 설정
-     ○ Number of decision trees - {100, 200, 300}
-     ○ Function to measure quality of a split - {Gini impurity, information gain}
+     + Number of decision trees - {100, 200, 300}
+     + Function to measure quality of a split - {Gini impurity, information gain}
   
-  3) Support Vector Machines(SVM)
+ - Support Vector Machines(SVM)
+   
     * 참고자료링크 : https://ko.wikipedia.org/wiki/서포트_벡터_머신
     * 파라미터 설정
-     ○ C (penalty parameter of the error term) - {0.0001, 0.001, 0.01, 0.1, 1.0, 10.0, 100.0, 1000.0}
-     ○ Kernel - {linear, radial basis function}
+     + C (penalty parameter of the error term) - {0.0001, 0.001, 0.01, 0.1, 1.0, 10.0, 100.0, 1000.0}
+     + Kernel - {linear, radial basis function}
   
-  4) 데이터를 train set / test set (70%/30%)으로 나누고 3-fold Cross-Validation(교차검증) 진행
+ - 데이터를 train set / test set (70%/30%)으로 나누고 3-fold Cross-Validation(교차검증) 진행
  
  - Data Set
    * 2011.01 ~ 2016.01 각 ETF의 Adjusted close price, 일간 trading volume 
