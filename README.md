@@ -73,13 +73,13 @@
    
    ![dataset](./image/pic6.png)
   
-**5. KRX Listed ETF?**
- 
- 
- 
-  
-  
-    
-    
-    
-    
+**5. Implementation in Korea ETF Market**
+ - Data Set : 2011.01 ~ 2020.03 각 ETF의 Adjusted close price, 일간 trading volume (출처 : Yahoo finance)
+   
+   ![dataset](./image/kor_etf_data.jpg)
+   
+ - Issue & Results
+   * 국내ETF시장 적용의 한계 : 다양한 자산군의 ETF부족. 주식형을 제외하고 자산시장을 대표할 만한 ETF가 부족.
+   * 장기로 갈수록 예측의 정확성이 높아짐(모든 모델 동일) 장기로 갈수록 목표셥누싀 양(+)값의 비중이 높은 불균형 데이터가 원인으로 추정
+   * Gain Criteria로 평가시 미국ETF와 달리 전체적으로 의미있는 예측정확도를 보여주지 못함 -> 예측정확도를 높이기 위해 새로운 feature발굴 및 추가필요
+   * 미국ETF시장과 달리 거래량보다 수익률 feature의 중요도가 높음
